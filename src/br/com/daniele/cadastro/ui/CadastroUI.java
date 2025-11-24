@@ -1,6 +1,7 @@
 package br.com.daniele.cadastro.ui;
 
 import java.util.Scanner;
+import java.util.UUID;
 
 public class CadastroUI {
     public int opcao;
@@ -25,7 +26,7 @@ public class CadastroUI {
 
         switch (opcao) {
             case 1:
-              System.out.println("Cadastrar Cliente");
+              cadastrarCliente();
               break;
             case 2:
               System.out.println("Listar Todos");
@@ -48,5 +49,10 @@ public class CadastroUI {
               criarMenu();
               break;
         }
+    }
+
+    private void cadastrarCliente(){
+        UUID id = UUID.randomUUID();
+        System.out.println(id);
     }
 }
