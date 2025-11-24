@@ -68,6 +68,10 @@ public class CadastroUI {
         System.out.print("Email do cliente: ");
         cliente.email = sc.nextLine();
 
+        System.out.print("Salário do cliente: ");
+        cliente.salario = sc.nextDouble();
+        sc.nextLine(); //Gambiarra do Scanner para limpar o cache
+
         System.out.print("Data de nascimento: ");
         String dataNascimento = sc.nextLine();
 
