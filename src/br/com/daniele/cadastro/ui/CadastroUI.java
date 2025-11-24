@@ -70,9 +70,15 @@ public class CadastroUI {
 
         System.out.print("Data de nascimento: ");
         String dataNascimento = sc.nextLine();
-        String[] dataNascimentoSplit = dataNascimento.split("-");
-        cliente.dataNascimento = LocalDate.parse(dataNascimento);
 
+        dataNascimento = dataNascimento.replace("-", "/");
+        String[] dataNascimentoSplit = dataNascimento.split("/");
+
+        cliente.dataNascimento = LocalDate.of(
+                Integer.parseInt(dataNascimentoSplit[2]),
+                Integer.parseInt(dataNascimentoSplit[1]),
+                Integer.parseInt(dataNascimentoSplit[0])
+        );
         cliente.exibirCliente();
     }
 }
