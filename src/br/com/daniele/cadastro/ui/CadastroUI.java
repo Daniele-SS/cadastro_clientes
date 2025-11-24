@@ -1,6 +1,7 @@
 package br.com.daniele.cadastro.ui;
 
 import br.com.daniele.cadastro.model.Cliente;
+import br.com.daniele.cadastro.repository.ClienteRepository;
 
 import java.time.LocalDate;
 import java.util.Scanner;
@@ -83,6 +84,7 @@ public class CadastroUI {
                 Integer.parseInt(dataNascimentoSplit[1]),
                 Integer.parseInt(dataNascimentoSplit[0])
         );
-        cliente.exibirCliente();
+        ClienteRepository clienteRepository = new ClienteRepository();
+        clienteRepository.cadastrar();
     }
 }
