@@ -29,12 +29,12 @@ public class Cliente {
             clientePaulo.email = "paulo@email.com";
             clientePaulo.dataNascimento = LocalDate.of(1999, 5, 14);
 
-            clienteAna.id = 1;
+            clienteAna.id = 2;
             clienteAna.nome = "Ana da Silva";
             clienteAna.email = "ana@email.com";
             clienteAna.dataNascimento = LocalDate.of(2010, 11, 24);
 
-            clienteBruno.id = 1;
+            clienteBruno.id = 3;
             clienteBruno.nome = "Bruno Gomes";
             clienteBruno.email = "bruno@email.com";
             clienteBruno.dataNascimento = LocalDate.of(1987, 3, 3);
