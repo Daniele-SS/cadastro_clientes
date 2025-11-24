@@ -1,5 +1,8 @@
 package br.com.daniele.cadastro.ui;
 
+import br.com.daniele.cadastro.model.Cliente;
+
+import java.time.LocalDate;
 import java.util.Scanner;
 import java.util.UUID;
 
@@ -53,6 +56,24 @@ public class CadastroUI {
 
     private void cadastrarCliente(){
         UUID id = UUID.randomUUID();
-        System.out.println(id);
+
+        Cliente cliente = new Cliente();
+        cliente.id = id.toString();
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println();
+        System.out.print("Nome do cliente: ");
+        cliente.nome = sc.nextLine();
+
+        System.out.print("Email do cliente: ");
+        cliente.email = sc.nextLine();
+
+        System.out.print("Data de nascimento: ");
+        String dataNascimento = sc.nextLine();
+        String[] dataNascimentoSplit = dataNascimento.split("-");
+        cliente.dataNascimento = LocalDate.parse(dataNascimento);
+
+        cliente.exibirCliente();
     }
 }
