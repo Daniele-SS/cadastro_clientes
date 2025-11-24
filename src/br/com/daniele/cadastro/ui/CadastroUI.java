@@ -1,9 +1,13 @@
 package br.com.daniele.cadastro.ui;
 
+import java.util.Scanner;
+
 public class CadastroUI {
     public int opcao;
 
     public void criarMenu(){
+        Scanner sc = new Scanner(System.in);
+
         System.out.println("CADASTRO DE CLIENTES");
         System.out.println("--------------------");
         System.out.println();
@@ -16,5 +20,7 @@ public class CadastroUI {
         System.out.println("---------------------");
         System.out.println();
         System.out.print("Escolha uma opção (1-6): ");
+
+        opcao = sc.nextInt();
     }
 }
