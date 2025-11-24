@@ -47,7 +47,6 @@ public class CadastroUI {
               System.out.println("Opção inválida! Escolha uma opção válida.");
               criarMenu();
               break;
-
         }
     }
 }
