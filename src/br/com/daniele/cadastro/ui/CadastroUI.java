@@ -22,5 +22,32 @@ public class CadastroUI {
         System.out.print("Escolha uma opção (1-6): ");
 
         opcao = sc.nextInt();
+
+        switch (opcao) {
+            case 1:
+              System.out.println("Cadastrar Cliente");
+              break;
+            case 2:
+              System.out.println("Listar Todos");
+              break;
+            case 3:
+              System.out.println("Exibir Cliente");
+              break;
+            case 4:
+              System.out.println("Excluir Cliente");
+              break;
+            case 5:
+              System.out.println("Atualizar Cliente");
+              break;
+            case 6:
+              System.out.println("Sair");
+              break;
+
+            default:
+              System.out.println("Opção inválida! Escolha uma opção válida.");
+              criarMenu();
+              break;
+
+        }
     }
 }
