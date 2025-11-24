@@ -26,7 +26,6 @@ public class CadastroUI {
         System.out.print("Escolha uma opção (1-6): ");
 
         opcao = sc.nextInt();
-
         switch (opcao) {
             case 1:
               cadastrarCliente();
