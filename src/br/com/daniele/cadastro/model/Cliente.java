@@ -26,7 +26,7 @@ public class Cliente {
 
             clientePaulo.id = 1;
             clientePaulo.nome = "Paulo de Oliveira";
-            clientePaulo.email = "paulo@emial.com";
+            clientePaulo.email = "paulo@email.com";
             clientePaulo.dataNascimento = LocalDate.of(1999, 5, 14);
 
             clienteAna.id = 1;
